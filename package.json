@@ -1,0 +1,12 @@
+{
+  "name": "wciba-privacy-policy",
+  "version": "1.0.0",
+  "description": "Privacy Policy for WCIBA Mobile App",
+  "scripts": {
+    "dev": "python3 -m http.server 8000",
+    "build": "echo 'No build required for static HTML'"
+  },
+  "keywords": ["privacy", "policy", "wciba"],
+  "author": "WCIBA",
+  "license": "ISC"
+}

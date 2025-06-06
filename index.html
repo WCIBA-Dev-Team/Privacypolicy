@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WCIBA Privacy Policy</title>
+    <link rel="icon" type="image/png" href="https://res.cloudinary.com/dh5ugs2aa/image/upload/v1738887589/WIN_LOGO_ynjvhu.png">
+    <link rel="apple-touch-icon" href="https://res.cloudinary.com/dh5ugs2aa/image/upload/v1738887589/WIN_LOGO_ynjvhu.png">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        :root {
+            --primary-color: #DC143C;
+            --text-primary: #000000;
+            --text-secondary: #333333;
+            --bg-primary: #FFFFFF;
+            --bg-secondary: #F5F5F5;
+            --border-color: #E0E0E0;
+            --shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+            line-height: 1.6;
+            color: var(--text-primary);
+            background: #FFFFFF;
+            min-height: 100vh;
+            margin: 0;
+            padding: 0;
+        }
+
+
+        .header {
+            background: white;
+            border-bottom: 1px solid var(--border-color);
+            box-shadow: var(--shadow);
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+
+        .header-content {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 1.5rem 2rem;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 1.5rem;
+            position: relative;
+            z-index: 1;
+        }
+
+        .logo {
+            width: 48px;
+            height: 48px;
+            border-radius: 12px;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+            transition: transform 0.3s ease;
+        }
+
+        .logo:hover {
+            transform: scale(1.05) rotate(5deg);
+        }
+
+        .header h1 {
+            font-size: 1.75rem;
+            font-weight: 700;
+            color: var(--primary-color);
+            margin: 0;
+            letter-spacing: -0.5px;
+            text-align: center;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 2rem auto;
+            padding: 2rem;
+            background: var(--bg-primary);
+        }
+
+
+        .intro {
+            font-size: 1.125rem;
+            color: var(--text-secondary);
+            margin-bottom: 2rem;
+            padding: 1.5rem;
+            background: var(--bg-secondary);
+            border-radius: 8px;
+            border-left: 3px solid var(--primary-color);
+        }
+
+        h2 {
+            color: var(--text-primary);
+            font-size: 1.75rem;
+            font-weight: 600;
+            margin-top: 2.5rem;
+            margin-bottom: 1rem;
+        }
+
+        h3 {
+            color: var(--text-primary);
+            font-size: 1.25rem;
+            margin-top: 1.5rem;
+            margin-bottom: 0.75rem;
+            font-weight: 500;
+        }
+
+        p {
+            margin-bottom: 1rem;
+            color: var(--text-secondary);
+            line-height: 1.8;
+        }
+
+        ul {
+            margin-left: 0;
+            margin-bottom: 1.5rem;
+            list-style: none;
+        }
+
+        li {
+            margin-bottom: 0.75rem;
+            color: var(--text-secondary);
+            line-height: 1.8;
+            padding-left: 1.5rem;
+            position: relative;
+        }
+
+        li::before {
+            content: '\2022';
+            position: absolute;
+            left: 0;
+            color: var(--primary-color);
+            font-weight: bold;
+        }
+
+        .info-card {
+            background: var(--bg-secondary);
+            padding: 1.5rem;
+            border-radius: 8px;
+            margin: 1.5rem 0;
+        }
+
+        .contact-info {
+            background: var(--bg-secondary);
+            padding: 2rem;
+            border-radius: 8px;
+            margin-top: 3rem;
+            border: 1px solid var(--border-color);
+        }
+
+        .contact-info h2 {
+            margin-top: 0;
+            color: var(--primary-color);
+        }
+
+        .contact-info p {
+            margin-bottom: 1rem;
+            color: var(--text-secondary);
+            position: relative;
+            z-index: 1;
+        }
+
+        .contact-info a {
+            color: var(--primary-color);
+            text-decoration: none;
+            font-weight: 600;
+            transition: all 0.2s ease;
+            display: inline-block;
+            border-bottom: 2px solid transparent;
+        }
+
+        .contact-info a:hover {
+            border-bottom-color: var(--primary-color);
+        }
+
+        .last-updated {
+            text-align: center;
+            color: var(--text-secondary);
+            font-size: 0.875rem;
+            margin-top: 3rem;
+            padding-top: 2rem;
+            border-top: 1px solid var(--border-color);
+        }
+
+        @media (max-width: 768px) {
+            .header-content {
+                padding: 1rem;
+            }
+
+            .logo {
+                width: 32px;
+                height: 32px;
+            }
+
+            .header h1 {
+                font-size: 1.25rem;
+            }
+
+            .container {
+                margin: 1rem;
+                padding: 1.5rem;
+                border-radius: 8px;
+            }
+
+            h2 {
+                font-size: 1.5rem;
+                margin-top: 2rem;
+            }
+
+            h3 {
+                font-size: 1.125rem;
+            }
+
+            .intro {
+                font-size: 1rem;
+                padding: 1rem;
+            }
+
+            li {
+                padding-left: 1.5rem;
+            }
+
+            li::before {
+                left: 0.5rem;
+            }
+
+            .contact-info {
+                padding: 1.5rem;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .container {
+                margin: 0.5rem;
+                padding: 1rem;
+            }
+
+            h2 {
+                font-size: 1.25rem;
+            }
+
+            .info-card {
+                padding: 1rem;
+            }
+        }
+
+
+    </style>
+</head>
+<body>
+    <header class="header">
+        <div class="header-content">
+            <img src="https://res.cloudinary.com/dh5ugs2aa/image/upload/v1738887589/WIN_LOGO_ynjvhu.png" alt="WCIBA Logo" class="logo">
+            <h1>WCIBA Privacy Policy</h1>
+        </div>
+    </header>
+
+    <div class="container">
+        
+        <div class="intro">
+            <p>We respect your privacy and are committed to protecting your personal information. This Privacy Policy explains how we collect, use, and safeguard your information when you use our mobile application.</p>
+        </div>
+
+        <h2>Information We Collect</h2>
+        <p>We collect the following information when you voluntarily provide it:</p>
+
+        <div class="info-card">
+            <h3>Personal Information</h3>
+            <ul>
+                <li>Name, email address, and phone number when submitting prayer requests or testimonies</li>
+                <li><strong>Device Information:</strong> Device type and operating system version to ensure app functionality</li>
+                <li><strong>Location Information:</strong> Approximate location (only when you use the feature to find the nearest WSF location, and only used temporarily on your device)</li>
+            </ul>
+        </div>
+
+        <h2>How We Use Your Information</h2>
+        <p>We use your information solely for the following purposes:</p>
+        <ul>
+            <li>To process and respond to prayer requests</li>
+            <li>To manage and display testimonies within the church community</li>
+            <li>To send service reminders and notifications (if enabled)</li>
+            <li>To improve app functionality and user experience</li>
+            <li>To identify and fix technical issues</li>
+        </ul>
+
+        <h2>Data Storage and Security</h2>
+        <ul>
+            <li>All personal information is stored securely in Firebase, a Google cloud service</li>
+            <li>We implement appropriate security measures to protect against unauthorized access</li>
+            <li>We retain your information only as long as necessary to fulfill the purposes outlined in this policy</li>
+        </ul>
+
+        <h2>Third-Party Services</h2>
+        <p>Our app uses the following third-party services:</p>
+        <ul>
+            <li><strong>Firebase (Google):</strong> For storing prayer requests and testimonies</li>
+            <li><strong>Apple Push Notification Service:</strong> For delivering notifications</li>
+        </ul>
+        <p>These services may collect certain information as described in their respective privacy policies.</p>
+
+        <h2>Your Rights and Choices</h2>
+        <p>You have the right to:</p>
+        <ul>
+            <li>Access, correct, or delete your personal information</li>
+            <li>Opt out of notifications through app settings</li>
+            <li>Request removal of your prayer requests or testimonies</li>
+        </ul>
+
+        <h2>Children's Privacy</h2>
+        <p>Our app is not intended for children under 13. We do not knowingly collect information from children under 13.</p>
+
+        <h2>Changes to This Policy</h2>
+        <p>We may update this Privacy Policy from time to time. We will notify you of any changes by posting the new policy in the app and updating the "Last Updated" date.</p>
+
+        <div class="contact-info">
+            <h2>Contact Us</h2>
+            <p>If you have questions about this Privacy Policy, please contact us at:</p>
+            <p><strong>Email:</strong> <a href="mailto:mediatechbarrie@winnerschapelcanada.org">mediatechbarrie@winnerschapelcanada.org</a></p>
+            <p><strong>Address:</strong> 21 Commerce Park Dr, Barrie, ON L4N 9P6</p>
+        </div>
+
+        <p class="last-updated"><strong>Last Updated:</strong> June 5th, 2025</p>
+    </div>
+</body>
+</html>
