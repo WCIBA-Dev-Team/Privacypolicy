@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
     <title>WCIBA Privacy Policy</title>
     <link rel="icon" type="image/png" href="https://res.cloudinary.com/dh5ugs2aa/image/upload/v1738887589/WIN_LOGO_ynjvhu.png">
     <link rel="apple-touch-icon" href="https://res.cloudinary.com/dh5ugs2aa/image/upload/v1738887589/WIN_LOGO_ynjvhu.png">
@@ -196,22 +196,23 @@
 
         @media (max-width: 768px) {
             .header-content {
-                padding: 1rem;
+                padding: 0.75rem;
             }
 
             .logo {
-                width: 32px;
-                height: 32px;
+                width: 28px;
+                height: 28px;
             }
 
             .header h1 {
-                font-size: 1.25rem;
+                font-size: 1.3rem;
             }
 
             .container {
-                margin: 1rem;
-                padding: 1.5rem;
-                border-radius: 8px;
+                margin: 0.5rem;
+                padding: 1.25rem;
+                border-radius: 6px;
+                width: auto;
             }
 
             h2 {
@@ -242,9 +243,18 @@
         }
 
         @media (max-width: 480px) {
+            .header {
+                position: relative; /* Change from sticky to relative for smaller screens */
+            }
+            
+            .header-content {
+                padding: 0.5rem;
+            }
+            
             .container {
-                margin: 0.5rem;
-                padding: 1rem;
+                margin: 0.25rem;
+                padding: 0.75rem;
+                width: calc(100% - 0.5rem);
             }
 
             h2 {
