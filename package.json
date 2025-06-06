@@ -4,7 +4,7 @@
   "description": "Privacy Policy for WCIBA Mobile App",
   "scripts": {
     "dev": "python3 -m http.server 8000",
-    "build": "echo 'No build required for static HTML'"
+    "build": "mkdir -p public && cp index.html public/"
   },
   "keywords": ["privacy", "policy", "wciba"],
   "author": "WCIBA",
