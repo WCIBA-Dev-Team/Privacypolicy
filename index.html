@@ -6,6 +6,9 @@
     <title>WCIBA Privacy Policy</title>
     <link rel="icon" type="image/png" href="https://res.cloudinary.com/dh5ugs2aa/image/upload/v1738887589/WIN_LOGO_ynjvhu.png">
     <link rel="apple-touch-icon" href="https://res.cloudinary.com/dh5ugs2aa/image/upload/v1738887589/WIN_LOGO_ynjvhu.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
     <style>
         * {
             margin: 0;
@@ -14,20 +17,21 @@
         }
 
         :root {
-            --primary-color: #DC143C;
-            --text-primary: #000000;
-            --text-secondary: #333333;
+            --primary-color: #D32F2F; /* Softer Red */
+            --text-primary: #212121; /* Dark Grey */
+            --text-secondary: #757575; /* Lighter Grey */
             --bg-primary: #FFFFFF;
-            --bg-secondary: #F5F5F5;
-            --border-color: #E0E0E0;
-            --shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            --bg-secondary: #FAFAFA; /* Very Light Grey */
+            --border-color: #EEEEEE; /* Light Grey for borders */
+            --shadow: 0 2px 4px rgba(0, 0, 0, 0.08); /* Softer shadow */
+            --accent-color: #FFAB91; /* A light coral/peach for accents if needed */
         }
 
         body {
-            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
-            line-height: 1.6;
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+            line-height: 1.7; /* Slightly increased line height for better readability */
             color: var(--text-primary);
-            background: #FFFFFF;
+            background: var(--bg-primary); /* Use variable for consistency */
             min-height: 100vh;
             margin: 0;
             padding: 0;
@@ -35,7 +39,7 @@
 
 
         .header {
-            background: white;
+            background: linear-gradient(to bottom, #FFFFFF, #FCFCFC); /* Subtle gradient */
             border-bottom: 1px solid var(--border-color);
             box-shadow: var(--shadow);
             position: sticky;
@@ -68,7 +72,7 @@
         }
 
         .header h1 {
-            font-size: 1.75rem;
+            font-size: 2.25rem; /* Increased size */
             font-weight: 700;
             color: var(--primary-color);
             margin: 0;
@@ -81,6 +85,8 @@
             margin: 2rem auto;
             padding: 2rem;
             background: var(--bg-primary);
+            box-shadow: 0 6px 16px rgba(0, 0, 0, 0.08); /* Added shadow */
+            border-radius: 8px; /* Added border-radius */
         }
 
 
