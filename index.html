@@ -20,9 +20,9 @@
             --primary-color: #D32F2F; /* Softer Red */
             --text-primary: #212121; /* Dark Grey */
             --text-secondary: #757575; /* Lighter Grey */
-            --bg-primary: #FFFFFF;
-            --bg-secondary: #FAFAFA; /* Very Light Grey */
-            --border-color: #EEEEEE; /* Light Grey for borders */
+            --bg-primary: #F9F9F9; /* Very light grey page background */
+            --bg-secondary: #FFFFFF; /* White for cards/sections on the light grey bg */
+            --border-color: #E0E0E0; /* Slightly darker border for better contrast on F9F9F9 */
             --shadow: 0 2px 4px rgba(0, 0, 0, 0.08); /* Softer shadow */
             --accent-color: #FFAB91; /* A light coral/peach for accents if needed */
         }
@@ -39,9 +39,9 @@
 
 
         .header {
-            background: linear-gradient(to bottom, #FFFFFF, #FCFCFC); /* Subtle gradient */
-            border-bottom: 1px solid var(--border-color);
-            box-shadow: var(--shadow);
+            background: linear-gradient(135deg, var(--primary-color) 0%, #B72828 100%); /* Rich red gradient */
+            border-bottom: 1px solid #A31F1F; /* Darker border for red header */
+            box-shadow: 0 2px 8px rgba(0,0,0,0.2); /* Slightly stronger shadow for prominent header */
             position: sticky;
             top: 0;
             z-index: 100;
@@ -72,21 +72,22 @@
         }
 
         .header h1 {
-            font-size: 2.25rem; /* Increased size */
+            font-size: 2.25rem;
             font-weight: 700;
-            color: var(--primary-color);
+            color: #FFFFFF; /* White text for red header */
             margin: 0;
             letter-spacing: -0.5px;
             text-align: center;
+            text-shadow: 1px 1px 2px rgba(0,0,0,0.2); /* Subtle text shadow for depth */
         }
 
         .container {
             max-width: 800px;
             margin: 2rem auto;
             padding: 2rem;
-            background: var(--bg-primary);
-            box-shadow: 0 6px 16px rgba(0, 0, 0, 0.08); /* Added shadow */
-            border-radius: 8px; /* Added border-radius */
+            background: var(--bg-secondary); /* Changed to bg-secondary (white) to pop on new --bg-primary */
+            box-shadow: 0 6px 16px rgba(0, 0, 0, 0.08);
+            border-radius: 8px;
         }
 
 
@@ -95,9 +96,9 @@
             color: var(--text-secondary);
             margin-bottom: 2rem;
             padding: 1.5rem;
-            background: var(--bg-secondary);
+            background: var(--bg-secondary); /* Ensure intro card also uses white bg */
             border-radius: 8px;
-            border-left: 3px solid var(--primary-color);
+            border-left: 4px solid var(--primary-color); /* Slightly thicker accent border */
         }
 
         h2 {
